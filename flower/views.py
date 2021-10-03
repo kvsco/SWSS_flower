@@ -3,6 +3,6 @@ from django.shortcuts import render
 
 
 def index(request):
-    print("----"*20)
+    print(" .. loading ..  ")
 
-    return HttpResponse("<h1>index</h1>")
+    return render(request, 'index.html')
