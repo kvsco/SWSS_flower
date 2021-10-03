@@ -5,4 +5,4 @@ from django.shortcuts import render
 def index(request):
     print(" .. loading ..  ")
 
-    return render(request, 'index.html')
+    return HttpResponse("index")
