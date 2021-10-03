@@ -1,7 +1,6 @@
 """config URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,15 +14,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import handler403, url, include
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    #     앱명          urls 경로 명시
-    path('', include('flower.urls')),
-    # 400번대 url오류 명시할 사이트
-    # handler400 = ''
-    # handler403 = ''
-    # handler404 = ''
-    # handler500 = ''
+    path('', views.index, name='index'),
+
+    #path('<str:num>/', views.num, name='num'),
 ]
