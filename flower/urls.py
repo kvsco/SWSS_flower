@@ -18,9 +18,9 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('index.html', views.index, name='index'),
-    path('generic.html', views.generic, name='generic'),
-    path('elements.html', views.elements, name='elements'),
+    path('index', views.index, name='index'),
+    path('generic', views.generic, name='generic'),
+    path('elements', views.elements, name='elements'),
 
     #path('<str:num>/', views.num, name='num'),
 ]
