@@ -1,6 +1,8 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 
+def signin(request):
+    return render(request, "flower/signin.html")
 
 def index(request):
     # print(" .. loading ..  ")

@@ -2,3 +2,10 @@
 1. phantom 템플릿 소스 다운받아서 적용시켜 봄 - static, template 및 하위 폴더와 데이터 추가
 2. UPDATE README
 3. MAKE HISTORY
+
+21/12/23 - 용
+1. 부트스트랩 sign-in 페이지
+2. ui만구현, form내용 상관없이 submit 시 '/index' 로 연결
+3. <index페이지> 진행중 ~ing
+    -필요없는ui제거
+    -include 사용해서 header, footer, 사이드 menu tab 모듈화

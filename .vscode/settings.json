@@ -1,7 +1,10 @@
 {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "files.associations": {
-        "*.html": "html"
-    }
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.html": "html"
+},
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+}
 }
